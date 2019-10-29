@@ -13,7 +13,8 @@ class TaskDetailViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     weak var taskTableView: TaskTableViewController?
-    
+    var taskString:String?
+    //The taskTableView property holds a reference back to the TaskTableViewController so this class can send data back once the Text Field has been edited.
     override func viewDidLoad() {
         super.viewDidLoad()
 
