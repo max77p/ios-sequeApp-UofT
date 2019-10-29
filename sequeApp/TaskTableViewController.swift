@@ -37,6 +37,8 @@ class TaskTableViewController: UITableViewController {
         return UITableViewCell()
     }
     
+    //Through the segue parameter that we’re given, we can access the destinationViewController
+//    (the view that’s going to be displayed in a moment) and the sourceViewController (the view that’s about to be removed from the display).
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if tasks == nil {
             return
